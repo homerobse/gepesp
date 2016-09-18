@@ -1,4 +1,3 @@
-<script type="text/javascript">
 function buscar(valor, listaCategoriasAtivas){ 
 	valor = removeDiacritics(valor);
 	valor = valor.toLowerCase();
@@ -127,4 +126,3 @@ function onEnter(e){
 	if(e.keyCode == 13)
 		buscar(campoBusca.value, construirListaDeCategoriasAtivas(botoesCategorias));
 }
-</script>
