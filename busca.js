@@ -56,7 +56,7 @@ function contarEstudos(titulos){
         if(titulos[i].style.display=="block")
           n=n+1;
     }
-    document.getElementById("contadorEstudos").textContent = n + " estudos encontrados."
+    document.getElementById("contadorEstudos").textContent = n + " estudos encontrados"
 }
 
 function construirListaDeCategoriasAtivas (botoesCategorias) {
