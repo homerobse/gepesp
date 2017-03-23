@@ -22,6 +22,8 @@ function buscar(valor, listaCategoriasAtivas){
 		}
 	}
 
+	contarEstudos(titulos);
+
 	function filtrarItemPorCategorias(listaCategoriasAtivas, categoriasDoItem){
 		if(listaCategoriasAtivas.length > 0)
 			var filtrado = false;
@@ -46,6 +48,15 @@ function filtrarCategoria(categoria){
 			botoesCategorias[i].checked = false;
 		else
 			botoesCategorias[i].checked = true;
+}
+
+function contarEstudos(titulos){
+    var n=0;
+    for(var i=0; i<titulos.length; i++) {
+        if(titulos[i].style.display=="block")
+          n=n+1;
+    }
+    document.getElementById("contadorEstudos").textContent = n + " estudos encontrados."
 }
 
 function construirListaDeCategoriasAtivas (botoesCategorias) {
